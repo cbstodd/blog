@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="Rails blog: production" uuid="4adb2297-61d0-4be1-853c-8d10d3db7e0f">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="Rails blog: development" uuid="dfa5096e-d7aa-4baa-86a5-68ad02be4549">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="Rails blog: test" uuid="6a682266-3fbd-44d1-9522-1f42103a5eb8">
+    <database-info product="PostgreSQL" version="9.3.4" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.3 JDBC4 (build 1100)">
+      <identifier-quote-string>&quot;</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact"/>
+    <database-model serializer="dbm" rdbms="POSTGRES" format-version="2.4">
+      <database id="1" name="blog_test"/>
+      <schema id="2" parent="1" name="public">
+        <object-id>2200</object-id>
+        <comment>standard public schema</comment>
+        <introspection-state-number>36515</introspection-state-number>
+        <introspection-timestamp>2016-01-15.23:24:07.535</introspection-timestamp>
+      </schema>
+      <sequence id="3" parent="2" name="posts_id_seq">
+        <object-id>54700</object-id>
+        <state-number>36513</state-number>
+      </sequence>
+      <table id="4" parent="2" name="posts">
+        <object-id>54702</object-id>
+        <state-number>36513</state-number>
+      </table>
+      <table id="5" parent="2" name="schema_migrations">
+        <object-id>54711</object-id>
+        <state-number>36514</state-number>
+      </table>
+      <column id="6" parent="4" name="id">
+        <state-number>36513</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer</data-type>
+        <default-expression>nextval(&apos;posts_id_seq&apos;::regclass)</default-expression>
+      </column>
+      <column id="7" parent="4" name="title">
+        <state-number>36513</state-number>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="8" parent="4" name="body">
+        <state-number>36513</state-number>
+        <data-type>text</data-type>
+      </column>
+      <column id="9" parent="4" name="created_at">
+        <state-number>36513</state-number>
+        <data-type>timestamp</data-type>
+      </column>
+      <column id="10" parent="4" name="updated_at">
+        <state-number>36513</state-number>
+        <data-type>timestamp</data-type>
+      </column>
+      <index id="11" parent="4" name="posts_pkey">
+        <object-id>54709</object-id>
+        <columns>id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="12" parent="4" name="posts_pkey">
+        <columns>id</columns>
+        <underlying-index>posts_pkey</underlying-index>
+        <primary>1</primary>
+      </key>
+      <column id="13" parent="5" name="version">
+        <state-number>36514</state-number>
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <index id="14" parent="5" name="unique_schema_migrations">
+        <object-id>54714</object-id>
+        <columns>version</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+    </database-model>
+  </data-source>
+</component>

@@ -6,7 +6,12 @@ gem 'pg'
 gem 'puma', '2.11.3'
 gem 'pry-rails'
 gem 'hirb'
+
+gem 'bootstrap-sass'
 gem 'sass-rails', '~> 4.0.3'
+gem 'bootstrap-datepicker-rails'
+gem 'jquery-rails'
+
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'

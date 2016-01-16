@@ -10,6 +10,12 @@
   <%= @post.body %>
 </p>
 
+
+<p>
+  <strong>Event date:</strong>
+  <%= @post.event_date %>
+</p>
+
 <p>
   <strong>Image</strong>
   <%= image_tag @post.image_url(:medium).to_s if @post.image_url present? %>

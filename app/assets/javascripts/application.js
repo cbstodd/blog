@@ -12,7 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap-sprockets
+//= require bootstrap-datepicker
 //= require turbolinks
 //= require disqus_rails
 //= require ckeditor/init
 //= require_tree .
+
+$('#datetimepicker').data("DateTimePicker").FUNCTION()
