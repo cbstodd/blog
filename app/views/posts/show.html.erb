@@ -15,5 +15,10 @@
   <%= image_tag @post.image_url(:medium).to_s if @post.image_url present? %>
 </p>
 
+<p>
+  <strong>Disqus</strong>
+  <%= raw disqus_thread %>
+</p>
+
 <%= link_to 'Edit', edit_post_path(@post) %> |
 <%= link_to 'Back', posts_path %>
